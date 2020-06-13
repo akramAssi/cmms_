@@ -1,0 +1,234 @@
+body {
+    /* background-image: url(login.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: opx 0px;
+  background-size: cover; */
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background-color: #696c8d;
+    overflow: hidden;
+    font-family: Roboto;
+}
+
+#div1 {
+    position: relative;
+    z-index: -10;
+    left: 0%;
+    right: 10%;
+    top: 0%;
+    bottom: 0%;
+    height: 100vh;
+    background: url(img/login.png);
+    /* background-position: 0px 0px; */
+    background-size: 73% 115%;
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+}
+
+#div2 {
+    position: absolute;
+    left: 40.29%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    z-index: 0;
+    background: url(img/sid_login@2x.png);
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    animation-name: enter;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes enter {
+    0% {
+        left: 130%;
+    }
+    100% {
+        left: 40.29%;
+    }
+}
+
+.content {
+    position: absolute;
+    top: 6%;
+    right: 0%;
+    width: 65%;
+}
+
+.header {
+    /* position: absolute;
+  top: 6%;
+  right: 6%; */
+    margin-left: 5%;
+    white-space: nowrap;
+}
+
+.header img {
+    /* float: left; */
+    display: inline-block;
+}
+
+.header h5 {
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.8vh;
+    /* margin-top: 0px;
+  margin-bottom: 0px; */
+    transform: translatey(-100%);
+    margin-left: -2%;
+    color: #ffffff;
+    white-space: nowrap;
+    /* transition: 0.1s; */
+}
+
+.form_login {
+    position: relative;
+    /* top: 35%; */
+    left: 45%;
+    transform: translatex(-50%);
+    text-align: center;
+}
+
+.form_login input[type="text"],
+input[type="password"] {
+    background-color: #fff;
+    display: block;
+    width: 70%;
+    height: 50px;
+    border-radius: 25px;
+    margin: 9% auto;
+    border: 1px solid #707070;
+    font-size: 4.5vh;
+    transition: 0.3s;
+    padding: 0px 20px;
+}
+
+.form_login input[type="text"]:focus::placeholder,
+input[type="password"]:focus::placeholder {
+    color: #fff;
+}
+
+.form_login input[type="submit"] {
+    box-shadow: 0px 2px 9px rgba(244, 156, 45, 0.69);
+    background: #f49c2d;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 29px;
+    color: #1c232c;
+    padding: 9px 48px;
+    border: 0px;
+    border-radius: 25px;
+}
+
+.form_login input[type="submit"]:hover {
+    color: #fff;
+}
+
+.form_login h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 77px;
+    line-height: 90px;
+    color: #ffffff;
+}
+
+#icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* left: 90%;
+  top: 90%; */
+    /* background: #1312da; */
+}
+
+.form_login input[type="text"]:focus,
+input[type="password"]:focus {
+    background: #f49c2d;
+    color: #1c232c;
+    outline: transparent;
+}
+
+@media only screen and (max-width:1300px) {
+    #div2 {
+        /* display: none; */
+        background: rgba(0, 0, 0, 0.5);
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        margin: auto;
+        border-radius: 25px;
+        bottom: 10%;
+    }
+    .content {
+        /* position: relative; */
+        /* top: 15%; */
+        left: 50%;
+        transform: translateX(-50%);
+        margin: auto;
+        height: 65vh;
+        border-radius: 25px;
+    }
+    .header {
+        width: 80%;
+        margin-left: -20%;
+    }
+    .header img {
+        width: 9vw;
+        height: 9vw;
+    }
+    .header h5 {
+        font-size: 2.2vw;
+    }
+    .form_login h1 {
+        font-size: 7vw;
+        line-height: 30px;
+    }
+    .form_login input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        font-size: 2.8vw;
+        padding: 0px 20px;
+        height: 40px;
+    }
+    #icon {
+        margin-right: 20px;
+        margin-bottom: 5px;
+    }
+    #icon img {
+        margin-left: 3px;
+    }
+    .form_login input[type="submit"] {
+        margin-left: 50px;
+    }
+    #div1 {
+        right: 0px;
+        left: 0px;
+        min-height: 100%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-image: url("img/mob_login.png");
+        background-position: center center;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    #div2 {
+        width: 90%;
+    }
+    .header h5 {
+        font-size: 3vw;
+    }
+}
+@media only screen and (max-width:500px) {
+    #icon,#icon img
+    {display: none;}
+}

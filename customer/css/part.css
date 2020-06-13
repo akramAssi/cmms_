@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+ * {
+            --fontSecond: #C9CCD0;
+            --prime-color: #1C232C;
+            --background: #F5F5F5;
+            --side-background: #448391;
+            --meun-background:#14181f;
+            --hover-color:#448390;
+            --scroll-bar: #E3A237;
+        }
+input{
+		border: 2px solid;
+		border-radius: 25px;
+		margin-left:5%;
+		margin-top:1%;
+		width: 265px;
+		height: 30px;
+		font-size: 2vw; 
+		box-shadow: 0 2px rgba(205,10,11,0.5);
+	}
+	#editbut{
+		display: none;
+	}
+	input:focus {
+outline: none;
+}
+	#myInput{
+		border-radius: 50px;
+		width: auto;
+		height: auto;
+		float: right;
+		border: 2px solid;
+		margin-top: 0.5%;
+		font-size: 20px;
+	}
+	button{
+		border:none;
+		background:none;
+	}
+	button:focus {
+outline: none;
+}
+#dialogdiv1{
+	position: relative;
+	width: 300px;
+	height: 380px;
+	border: 2px solid;
+	margin: auto;
+	top: 20%;
+	background:white;
+	border-radius: 10px;
+}
+
+#save, #edit{
+	float:right;
+	background: rgb(11,200,0);
+	color: white;width: 30%;
+	border-radius: 25px;
+	margin-right: 1vw;
+}
+#dialog{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.5);
+	top: 0;
+	display: none;
+}
+#header{
+	position: fixed;
+	width: 100%;
+	float:right;
+	background-color: white;
+	height: 45px;
+	top: 0%;
+}
+
+#add{
+	height:35px;
+	margin-right:-3% ;
+	margin-top:0.5%;
+	float: right;
+}
+	::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: var(--meun-background);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scroll-bar); 
+  border-radius: 5px;
+}
+ @media only screen and (max-width: 1000px) {
+ 	#editbut{
+		display: table-cell;
+	}
+	input{
+		font-size: 5vw;
+	}
+ }

@@ -1,0 +1,174 @@
+body{
+	 background-color:#F5F5F5;
+}
+.act{
+			border-radius: 25px;
+		}
+		table{
+			border-collapse: collapse;
+			background: none;
+			font-size: 2.5vw;
+			margin-left: 1%;
+		}
+		.firstDiv{
+			border: 1.2px solid;
+			display: inline-block;
+			border-radius: 2vw;
+			width: 16vw;
+			float: right;
+		}
+		.firstDiv button{
+			background:none;
+			border: none;
+			border-left: 1px solid;
+			float: right;
+			margin-top: 2px;
+		}
+		.firstDiv input{
+			position: static;
+			background: none;
+			border: none;
+			width: 80%;
+			margin-left: 1%;
+			font-size: 75%;
+		}
+		.firstDiv button{
+			height: 1.5vw;
+			width: 2vw;
+		}
+#tr:nth-child(even) {
+
+  background-color: #dddddd;
+}
+.date{
+	position: static;
+	display: inline-block;
+	border-bottom: 1px solid;
+	width: 11%;
+	float: right;
+	margin-right: 3vw;
+}
+.date input{
+	background: none;
+	border: none;
+	margin-left: 2px;
+	width: 11vw;
+	font-size: 1vw;
+}
+.secandDiv{
+	position: static;
+	overflow-x: hidden;
+	height: 86%;
+	width: 98%;
+	margin-left: 1%;
+}
+.secandDiv div{
+	position: static;
+	width: 100%;
+	background-color: #E3A237;
+	border-radius: 2vw;
+	margin-top:2%;
+	margin-bottom: 1%;
+	box-shadow: 0px 3px gray;
+}
+.margin{
+	margin-left: 7vw;
+}
+#myBtn{
+	position: absolute;
+	width:100%;
+	height: 100%;
+	top:0;
+	background-color: rgba(0,0,0,0.2);
+	border: none;
+}
+#myBtn table{
+	font-size: 1.5vw;
+		margin-left: 0%;
+}
+.firstInDia{
+	width: 50vw;
+	height: 35vw;
+	margin: auto;
+	background-color: #F5F5F5;
+	box-shadow: -2px 2px 2px gray;
+	margin-left: 25vw;
+	border-radius: 1.5vw;
+	font-size: 1vw;
+}
+.secandInDia{
+padding-top: 5%;
+padding-left: 5%;
+margin-bottom: 10px;
+}
+.secandInDia table{
+	margin-left: 5%;
+	margin-bottom: 10px;
+	width: 90%;
+	height: 20%;
+}
+.Xbutton{
+	float: right;
+	font-size: 2vw;
+	margin-right: 10px;
+	margin-top: 10px;
+	border: none;
+	background: none;
+}
+.thiredInDia{
+	border: 2px solid;
+	height: 75%;
+	width: 90%;
+	margin-left: 5%;
+	border-radius: 10px;
+}
+.forthInDia{
+	position: static;
+	padding-top: 3vw;
+	height: 18vw;
+	width: 49vw;
+	margin-left: 1%;
+}
+.fas{
+	position: absolute;
+	height: 1vw;
+	margin-left:-0.5vw;
+	margin-top:-0.4vw;
+	}
+	textarea{
+		width: 49vw;
+		height: 5vw;
+		resize: none;
+	}
+	.buttonDia{
+		float: right;
+		background-color: rgba(0,155,0,1);border-radius: 13px;
+		font-size: 1.5vw;
+		border: none;
+		box-shadow: 0px 3px solid gray;
+		width: 6vw;
+		margin: 1% 1% 1% 0;
+	}
+	@media only screen and (max-width: 1100px) {
+		.firstDiv{
+			width:20vw; 
+			border-radius: 2.5vw;
+			margin-top: 5px;
+			height: 2vw;
+		}
+		.firstDiv input{
+			position: absolute;
+			max-height: 2vw;
+			background:none;
+			width: 15%;
+			font-size: 1.5vw;
+		}
+		.date{position: static;
+			margin-top: -10px;
+		}
+
+	.firstDiv button{
+			margin-top:0;
+		}
+
+}

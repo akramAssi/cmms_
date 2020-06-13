@@ -1,0 +1,244 @@
+* {
+    --fontSecond: #C9CCD0;
+    --prime-color: #1C232C;
+    --background: #F5F5F5;
+    --side-background: #448391;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    --cancel-but: #E16031;
+    --save-but: #F49C2D;
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+    font-family: Roboto;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+html {
+    background-color: var(--background);
+}
+
+.addinfo {
+    height: 10%;
+    /* text-align: right; */
+    padding: 10px;
+    margin: 20px;
+}
+
+.button {
+    background-color: inherit;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    padding-top: 13px;
+    padding-right: 40px;
+    padding-bottom: 3px;
+    overflow: auto;
+}
+
+.button img {
+    float: right;
+    margin-left: 10px;
+    width: 55px;
+    cursor: pointer;
+}
+
+.info {
+    text-align: center;
+    width: 100%;
+    height: 90vh;
+    padding-left: 30px;
+}
+
+.info .rectangle {
+    float: left;
+    width: 200px;
+    height: 270px;
+    margin: 25px 30px;
+    padding: 20px;
+    background: #F49C2D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.rectangle img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.rectangle div {
+    margin-top: 15px;
+    font-size: 25px;
+    line-height: 35px;
+     width:160px;
+}
+
+.pop {
+    position: relative;
+    top: 5%;
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
+    width: 35%;
+    margin: auto auto;
+    height: 380px;
+    background: var(--background);
+    border-radius: 25px;
+    padding: 30px;
+    -webkit-animation: animatezoom 1s;
+    animation: animatezoom 1s;
+    text-align: center;
+}
+
+.pop .close {
+    position: absolute;
+    top: 3%;
+    right: 8%;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.pop input[type="text"],
+select,
+.pop input[list="job"] {
+    border-radius: 25px;
+    width: 92%;
+    font-size: 17px;
+    clear: both;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    background: var(--background);
+    border: 2px solid #1C232C;
+    padding: 10px;
+    padding-left: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    line-height: 18px;
+    cursor: text;
+}
+
+.pop table {
+    margin-top: 20px;
+    line-height: 30px;
+    text-align: left;
+}
+
+.pop button {
+    /* width: 30%; */
+    margin: 10px;
+    font-size: 13px;
+    padding: 10px 20px;
+    /* height: 30px; */
+    margin-top: 30px;
+    border-radius: 25px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+    text-align: center;
+}
+
+input,select,
+button:focus {
+    outline: none;
+}
+
+#downside {
+    margin-top: 35px;
+}
+
+#downside .butt {
+    border-radius: 25px;
+    font-size: 15px;
+    width: 8vw;
+    min-width: 80px;
+    padding: 8px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    color: var(--prime-color);
+    min-width: 104px;
+    min-height: 37px;
+    border-style: hidden;
+}
+
+.cancel {
+    background: var(--cancel-but);
+}
+
+.save {
+    background: var(--save-but);
+    margin-right: 4vw;
+}
+
+.cancel:hover {
+    background-color: rgb(206, 78, 32);
+}
+
+.save:hover {
+    background: rgb(240, 147, 33);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.save:active,
+.cancel:active {
+    transform: translateY(3%);
+    border: 0 solid transparent;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .pop {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    .pop {
+        width: 85%;
+    }
+}
+#id03 .pop {
+    height: 310px;
+}
+@media only screen and (max-width: 360px) {
+    .save {
+        margin-right: 0vw;
+    }
+      .pop {
+        width: 95%;
+    }
+    #id03 .pop {
+        height: 440px;
+    }
+}

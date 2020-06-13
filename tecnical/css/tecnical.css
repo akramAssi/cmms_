@@ -1,0 +1,91 @@
+.act{
+			border-radius: 25px;
+		}
+		table{
+			border-collapse: collapse;
+			background: none;
+		}
+		
+#tr:nth-child(even) {
+
+  background-color: #dddddd;
+}
+#tecImge{
+	width: 4vw;
+	height: 4vw;
+	border-radius:50px;
+}
+
+		.pageButton{
+			position: absolute;
+			right:20%;
+			top: 1.5vw;
+		}
+		.pageButton img{
+			height: 2.5vw;
+			margin: 5px;
+		}
+		#tecName{
+			position: absolute;
+			float: right;
+			display: inline-block;
+			width: 20vw;
+			margin-left: 5vw;
+			margin-top: 0vw;
+			height: 10vw;
+		}
+		.log{
+			position: absolute;
+			margin-left: 5vw;
+			width: 10vw;
+			margin-top: 2vw;
+		}
+		.upperdiv{
+			position: static;
+			width: 98%;
+			height: 6vw;
+			background-color: #14181f;
+			border-radius: 2vw;
+			margin:0.5% 1% 0 1%;
+		}
+		.leftDiv{
+			position: absolute;
+			border-right: 2px solid  #C9CCD0;
+			width: 15%;height: 5vw;
+			margin-top: 0.4%;
+		}
+		.leftDiv img{
+			margin-top: -2%;
+			max-width: 120%;
+		}
+		.leftDiv span{
+			font-size: 3vw;
+			padding-bottom: -10%;
+			color: #C9CCD0;
+		}
+		.rightDiv{
+			float: right;
+			top: 0;
+			width: 17%;
+			margin-right: 1vw;
+			margin-top:1vw;
+		}
+		.log{
+			position: static;
+		}
+		.log a{
+			text-decoration: none;
+			color: #C9CCD0;
+			font-size: 1vw;
+		}
+		@media only screen and (max-width: 500px) {
+			.pageButton{
+				right:20%;
+			}
+			#tecName{
+				margin-top: -2%;
+			}
+			.log{
+				margin-top: -2%;
+			}
+		}
